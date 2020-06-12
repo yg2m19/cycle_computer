@@ -1,0 +1,243 @@
+Summary of simulation results for Team M1
+
+submission by yg2m19 (yg2m19.10) on Tue May  5 12:29:27 2020
+
+
+----
+
+COMPILATION OK
+DISPLAY IS LED ONLY
+This Bicycle Computer supports 4 modes:
+MODE 0: Distance
+MODE 1: Duration
+MODE 2: Cadence
+MODE 3: Speed
+(the computer will enter mode 0 on reset)
+INFO: Model supports scan path control signals
+INFO: Wrapper contains synchronisation D-Types for reset
+
+---------
+Testing behavioural model:
+
+
+----
+
+Simulation using sequence: OdometerTest_1_25km
+
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    d01.2
+SIMULATION:                      OdometerTest_1_25km ->      d01.2
+
+----
+
+Simulation using sequence: DurationTest_121sec
+
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    t0.02
+SIMULATION:                      DurationTest_121sec ->      t0.02
+
+----
+
+Simulation using sequence: SpeedTest_Steady_25kmh
+
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    v25.1
+SIMULATION:                   SpeedTest_Steady_25kmh ->      v25.1
+
+----
+
+Simulation using sequence: CadenceTest_100rpm
+
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    c100.
+SIMULATION:                       CadenceTest_100rpm ->      c100.
+
+----
+
+Simulation using sequence: WheelSize_2000mm_2_09km_M1
+
+COMPILATION OK
+LED Display:         
+LED Display:    d00.0
+Press Mode and Trip buttons (adjust wheel size)
+LED Display:     000.
+Press Trip button (increment digit)
+LED Display:     100.
+Press Trip button (increment digit)
+LED Display:     200.
+Press Trip button (increment digit)
+LED Display:     300.
+Press Trip button (increment digit)
+LED Display:     400.
+Press Trip button (increment digit)
+LED Display:     500.
+Press Trip button (increment digit)
+LED Display:     600.
+Press Mode button (next digit)
+Press Trip button (increment digit)
+LED Display:     610.
+Press Trip button (increment digit)
+LED Display:     620.
+Press Trip button (increment digit)
+LED Display:     630.
+Press Mode button (next digit)
+Result:    d02.0
+SIMULATION:               WheelSize_2000mm_2_09km_M1 ->      d02.0
+
+----
+
+
+INFO - LCD not supported by team M1
+
+
+----
+
+behavioural passes all tests
+
+---------
+Testing gate_level model:
+
+
+----
+
+Simulation using sequence: OdometerTest_1_25km
+
+Reading SDF file from location "../yg2m19.10/gate_level/computer.sdf"
+SDF statistics: No. of Pathdelays = 11450  Annotated = 100.00% -- No. of Tchecks = 10850  Annotated = 99.26% 
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    d01.2
+SIMULATION:                      OdometerTest_1_25km ->      d01.2
+
+----
+
+Simulation using sequence: DurationTest_121sec
+
+Reading SDF file from location "../yg2m19.10/gate_level/computer.sdf"
+SDF statistics: No. of Pathdelays = 11450  Annotated = 100.00% -- No. of Tchecks = 10850  Annotated = 99.26% 
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    t0.02
+SIMULATION:                      DurationTest_121sec ->      t0.02
+
+----
+
+Simulation using sequence: SpeedTest_Steady_25kmh
+
+Reading SDF file from location "../yg2m19.10/gate_level/computer.sdf"
+SDF statistics: No. of Pathdelays = 11450  Annotated = 100.00% -- No. of Tchecks = 10850  Annotated = 99.26% 
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    v25.1
+SIMULATION:                   SpeedTest_Steady_25kmh ->      v25.1
+
+----
+
+Simulation using sequence: CadenceTest_100rpm
+
+Reading SDF file from location "../yg2m19.10/gate_level/computer.sdf"
+SDF statistics: No. of Pathdelays = 11450  Annotated = 100.00% -- No. of Tchecks = 10850  Annotated = 99.26% 
+COMPILATION OK
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Press Mode button
+Result:    c100.
+SIMULATION:                       CadenceTest_100rpm ->      c100.
+
+----
+
+Simulation using sequence: WheelSize_2000mm_2_09km_M1
+
+Reading SDF file from location "../yg2m19.10/gate_level/computer.sdf"
+SDF statistics: No. of Pathdelays = 11450  Annotated = 100.00% -- No. of Tchecks = 10850  Annotated = 99.26% 
+COMPILATION OK
+LED Display:         
+LED Display:    d00.0
+Press Mode and Trip buttons (adjust wheel size)
+LED Display:     000.
+Press Trip button (increment digit)
+LED Display:     100.
+Press Trip button (increment digit)
+LED Display:     200.
+Press Trip button (increment digit)
+LED Display:     300.
+Press Trip button (increment digit)
+LED Display:     400.
+Press Trip button (increment digit)
+LED Display:     500.
+Press Trip button (increment digit)
+LED Display:     600.
+Press Mode button (next digit)
+Press Trip button (increment digit)
+LED Display:     610.
+Press Trip button (increment digit)
+LED Display:     620.
+Press Trip button (increment digit)
+Result:    d02.0
+SIMULATION:               WheelSize_2000mm_2_09km_M1 ->      d02.0
+
+----
+
+
+INFO - LCD not supported by team M1
+
+
+----
+
+gate_level passes all tests
+
+
+----
+
+
+INFO - gate_level model includes scan ports
+
+
+----
+
+
+INFO - detected evidence of reset synchronisation in wrapper
+
+
+----
+
+
+Passed all automated tests
